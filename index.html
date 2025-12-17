@@ -1,0 +1,173 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магаз Магазов | Головна</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1><i class="fas fa-store"></i> Магаз Магазов</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Головна</a></li>
+                <li><a href="#products" class="nav-link">Магазини</a></li>
+                <li><a href="about.html" class="nav-link">Про нас</a></li>
+                <li><a href="#reviews" class="nav-link">Відгуки</a></li>
+                <li><a href="#contacts" class="nav-link">Контакти</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="hero" id="home">
+            <div class="hero-content">
+                <h2 class="hero-title">Магазини <span class="gradient-text">на продаж</span></h2>
+                <p class="hero-desc">Ексклюзивні комерційні об'єкти преміум класу. Інвестуйте в майбутнє вже сьогодні.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Переглянути магазини</a>
+                    <a href="about.html" class="btn btn-secondary">Дізнатись більше</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products section" id="products">
+            <div class="container">
+                <h2 class="section-title">Доступні магазини</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://learn.logikaschool.com/uploads/student/4634549/693c0506c2a08.png" alt="Магазин води">
+                            <div class="product-badge">Вода</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Магазин води</h3>
+                            <p class="product-desc">Вода дуже звичайна, але магазин преміум класу</p>
+                            <div class="product-price">24 895 грн</div>
+                            <a href="#" class="btn btn-buy">Купити</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://learn.logikaschool.com/uploads/student/4634549/693c050d37e3a.png" alt="Магазин Лего">
+                            <div class="product-badge">Лего</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Магазин Лего</h3>
+                            <p class="product-desc">Можна позбирати лего в преміум інтер'єрі</p>
+                            <div class="product-price">55 517 грн</div>
+                            <a href="#" class="btn btn-buy">Купити</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://learn.logikaschool.com/uploads/student/4634549/693c05127038a.png" alt="Магазин комп'ютерів">
+                            <div class="product-badge">Техніка</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Магазин комп'ютерів</h3>
+                            <p class="product-desc">Дуже хороші комп'ютери в сучасному дизайні</p>
+                            <div class="product-price">275 350 грн</div>
+                            <a href="#" class="btn btn-buy">Купити</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews section alternate" id="reviews">
+            <div class="container">
+                <h2 class="section-title">Відгуки клієнтів</h2>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Дуже дорого!!!!!!!! Не можу купити!!! Але сайт класний..."</p>
+                        <span class="author">- Іван П.</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Клас сайт! Дизайн на рівні, чекаю зарплату щоб купити."</p>
+                        <span class="author">- Марія К.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакти</h3>
+                    <p><i class="fas fa-phone"></i> +222 66 77 666</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Соціальні мережі</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Магаз Магазов. Всі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Buy button animation
+        document.querySelectorAll('.btn-buy').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.innerHTML = '<i class="fas fa-check"></i> Додано!';
+                this.style.background = 'var(--success)';
+                setTimeout(() => {
+                    this.innerHTML = 'Купити';
+                    this.style.background = '';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
